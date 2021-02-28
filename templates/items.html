@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+</head>
+<body>
+<ul>
+    {% for item in items %}
+    <li><a href = "http://127.0.0.1:8000/item/{{ item.id }}">Товар: {{ item.name }} Бренд: {{ item.brand }} количество {{ item.count }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
